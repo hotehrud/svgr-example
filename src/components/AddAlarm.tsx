@@ -1,7 +1,9 @@
 import * as React from "react";
 import { SVGProps } from "react";
+import styled from "@emotion/styled";
+import Svg from "../Svg";
 
-const SvgAddAlarm = ({
+const BaseComponent = ({
   size,
   title,
   ...props
@@ -10,7 +12,7 @@ const SvgAddAlarm = ({
   title: string,
 }) => {
   return (
-    <svg
+    <Svg
       width={size}
       height={size}
       xmlns="http://www.w3.org/2000/svg"
@@ -25,10 +27,13 @@ const SvgAddAlarm = ({
         fill="#001833"
         fillRule="evenodd"
       />
-    </svg>
+    </Svg>
   );
 };
 
+const SvgAddAlarm = styled(BaseComponent)`
+  outline: none;
+`;
 SvgAddAlarm.defaultProps = {
   size: 24,
 };
