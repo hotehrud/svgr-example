@@ -1,0 +1,12 @@
+{
+  "name": "svgr",
+  "version": "1.0.0",
+  "description": "svgr example",
+  "scripts": {
+    "build:svg": "svgr svg -d src/components --typescript"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@svgr/cli": "^6.2.0"
+  }
+}
